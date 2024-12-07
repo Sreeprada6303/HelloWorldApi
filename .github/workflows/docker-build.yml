@@ -23,8 +23,8 @@ jobs:
 
       # Step 3: Build the Docker image
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/helloworldapi:latest .
+        run: docker build -t sree6303/helloworldapirepo:latest .
 
       # Step 4: Push the Docker image to Docker Hub
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/helloworldapi:latest
+        run: docker push sree6303/helloworldapirepo:latest
